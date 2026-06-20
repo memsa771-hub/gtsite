@@ -185,7 +185,12 @@
       benefitsList.appendChild(li);
     });
 
-    document.getElementById('modalProjectTech').textContent = project.tech.join(' · ');
+    document.getElementById('modalProjectTech').innerHTML = '';
+    project.tech.forEach(function (t) {
+      const span = document.createElement('span');
+      span.textContent = t;
+      document.getElementById('modalProjectTech').appendChild(span);
+    });
 
     projectModalOverlay.classList.add('active');
     projectModalOverlay.setAttribute('aria-hidden', 'false');

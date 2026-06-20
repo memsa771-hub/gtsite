@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 
@@ -534,25 +534,36 @@
   <!-- Project Detail Modal -->
   <div class="project-modal-overlay" id="projectModalOverlay" aria-hidden="true">
     <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
-      <button type="button" class="project-modal-close" id="projectModalClose" aria-label="Close">Close</button>
-      <div class="project-modal-scroll">
-        <div class="project-modal-image">
+      <button type="button" class="project-modal-close" id="projectModalClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="project-modal-layout">
+        <div class="project-modal-media">
           <img id="modalProjectImage" src="" alt="">
         </div>
-        <div class="project-modal-content">
-          <p class="modal-meta"><span id="modalProjectTag"></span><span id="modalProjectYear"></span></p>
-          <h2 id="modalProjectTitle"></h2>
-          <p class="modal-client" id="modalProjectClient"></p>
-          <p class="modal-summary" id="modalProjectSummary"></p>
-
-          <div class="modal-block">
-            <h3>What it does for the client</h3>
-            <ul class="modal-list" id="modalProjectBenefits"></ul>
+        <div class="project-modal-panel">
+          <div class="project-modal-scroll">
+            <header class="modal-header">
+              <p class="modal-meta">
+                <span id="modalProjectTag"></span>
+                <span class="modal-year" id="modalProjectYear"></span>
+              </p>
+              <h2 id="modalProjectTitle"></h2>
+              <p class="modal-client" id="modalProjectClient"></p>
+            </header>
+            <p class="modal-summary" id="modalProjectSummary"></p>
+            <div class="modal-section">
+              <h3>Outcomes</h3>
+              <ul class="modal-outcomes" id="modalProjectBenefits"></ul>
+            </div>
+            <div class="modal-section">
+              <h3>Stack</h3>
+              <div class="modal-tech" id="modalProjectTech"></div>
+            </div>
           </div>
-
-          <p class="modal-tech-line"><span class="modal-tech-label">Built with</span> <span id="modalProjectTech"></span></p>
-
-          <a href="#contact" class="btn-primary btn-block" id="projectModalContact">Start a similar project</a>
+          <div class="project-modal-footer">
+            <a href="#contact" class="btn-primary btn-block" id="projectModalContact">Start a similar project</a>
+          </div>
         </div>
       </div>
     </div>
@@ -569,6 +580,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>
