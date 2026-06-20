@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -208,46 +208,36 @@
         <div class="portfolio-grid" id="portfolioGrid">
 
           <article class="portfolio-card featured" data-category="web">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-ecommerce">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-nav"></div>
-                  <div class="mock-hero-block"></div>
-                  <div class="mock-cards"><span></span><span></span><span></span></div>
+            <div class="portfolio-featured-layout">
+              <div class="portfolio-image-wrap">
+                <img class="portfolio-image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=560&fit=crop&q=80" alt="Apex Commerce Platform dashboard" width="900" height="560" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="portfolio-view-btn">Featured Project</span>
                 </div>
+                <span class="portfolio-ribbon">Featured</span>
               </div>
-              <div class="portfolio-overlay">
-                <p>Full-stack marketplace with real-time inventory, payments, and admin dashboard.</p>
-                <span class="overlay-link">Featured Project</span>
-              </div>
-            </div>
-            <div class="portfolio-body">
-              <div class="portfolio-meta">
-                <span class="portfolio-tag">Web Development</span>
-                <span class="portfolio-year">2025</span>
-              </div>
-              <h3>Apex Commerce Platform</h3>
-              <p class="portfolio-client">Retail &amp; E-Commerce</p>
-              <div class="portfolio-tech">
-                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              <div class="portfolio-featured-info">
+                <div class="portfolio-meta">
+                  <span class="portfolio-tag">Web Development</span>
+                  <span class="portfolio-year">2025</span>
+                </div>
+                <h3>Apex Commerce Platform</h3>
+                <p class="portfolio-client">Retail &amp; E-Commerce</p>
+                <p class="portfolio-desc">Full-stack marketplace with real-time inventory, secure payments, and a powerful admin dashboard for vendors.</p>
+                <div class="portfolio-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>PostgreSQL</span>
+                </div>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="mobile">
-            <div class="portfolio-visual">
-              <div class="phone-mockup mockup-banking">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                  <div class="mock-app-header"></div>
-                  <div class="mock-balance"></div>
-                  <div class="mock-actions"><span></span><span></span><span></span><span></span></div>
-                  <div class="mock-list"><span></span><span></span><span></span></div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&q=80" alt="FinVault mobile banking app" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Secure mobile banking with biometric login, transfers, and spending insights.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -257,26 +247,20 @@
               </div>
               <h3>FinVault Mobile Banking</h3>
               <p class="portfolio-client">Financial Services</p>
+              <p class="portfolio-desc">Secure banking app with biometric login, instant transfers, and spending insights.</p>
               <div class="portfolio-tech">
-                <span>Flutter</span><span>Firebase</span><span>REST API</span>
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>REST API</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="web">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-healthcare">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-sidebar"></div>
-                  <div class="mock-main">
-                    <div class="mock-chart"></div>
-                    <div class="mock-table"><span></span><span></span><span></span></div>
-                  </div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&q=80" alt="MedCore health portal" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Patient records, appointment scheduling, and analytics for healthcare providers.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -286,25 +270,20 @@
               </div>
               <h3>MedCore Health Portal</h3>
               <p class="portfolio-client">Healthcare</p>
+              <p class="portfolio-desc">Patient records, appointment scheduling, and analytics for clinics.</p>
               <div class="portfolio-tech">
-                <span>Vue.js</span><span>Django</span><span>MySQL</span>
+                <span>Vue.js</span>
+                <span>Django</span>
+                <span>MySQL</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="cloud">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-cloud">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-cloud-nodes">
-                    <div class="node"></div><div class="node center"></div><div class="node"></div>
-                  </div>
-                  <div class="mock-metrics"><span></span><span></span><span></span></div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&q=80" alt="CloudShift enterprise cloud" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Zero-downtime AWS migration with auto-scaling and cost optimization.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -314,26 +293,20 @@
               </div>
               <h3>CloudShift Enterprise</h3>
               <p class="portfolio-client">Logistics &amp; Supply Chain</p>
+              <p class="portfolio-desc">Zero-downtime AWS migration with auto-scaling and cost optimization.</p>
               <div class="portfolio-tech">
-                <span>AWS</span><span>Docker</span><span>Terraform</span>
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Terraform</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="web">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-pos">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-pos-grid">
-                    <div class="mock-pos-item"></div><div class="mock-pos-item"></div>
-                    <div class="mock-pos-item"></div><div class="mock-pos-item"></div>
-                  </div>
-                  <div class="mock-pos-cart"></div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&h=400&fit=crop&q=80" alt="Retail POS Pro system" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Point-of-sale system with inventory sync, receipts, and sales reporting.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -343,24 +316,20 @@
               </div>
               <h3>Retail POS Pro</h3>
               <p class="portfolio-client">Retail &amp; Hospitality</p>
+              <p class="portfolio-desc">POS with inventory sync, receipts, and real-time sales reporting.</p>
               <div class="portfolio-tech">
-                <span>Python</span><span>Gunicorn</span><span>PostgreSQL</span>
+                <span>Python</span>
+                <span>Gunicorn</span>
+                <span>PostgreSQL</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="marketing">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-marketing">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-campaign-header"></div>
-                  <div class="mock-stats-row"><span></span><span></span><span></span></div>
-                  <div class="mock-graph"></div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80" alt="BrandPulse marketing campaign" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Multi-channel campaign with SEO, paid ads, and conversion tracking.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -370,25 +339,20 @@
               </div>
               <h3>BrandPulse Growth Campaign</h3>
               <p class="portfolio-client">Consumer Brands</p>
+              <p class="portfolio-desc">Multi-channel campaign with SEO, paid ads, and conversion tracking.</p>
               <div class="portfolio-tech">
-                <span>SEO</span><span>Google Ads</span><span>Analytics</span>
+                <span>SEO</span>
+                <span>Google Ads</span>
+                <span>Analytics</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="cloud">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-network">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-network">
-                    <div class="net-line"></div><div class="net-line"></div>
-                    <div class="net-dot a"></div><div class="net-dot b"></div><div class="net-dot c"></div>
-                  </div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80" alt="NetGuard network infrastructure" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Enterprise LAN/WAN design with firewall policies and 24/7 monitoring.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -398,23 +362,20 @@
               </div>
               <h3>NetGuard Corporate Network</h3>
               <p class="portfolio-client">Corporate Offices</p>
+              <p class="portfolio-desc">Enterprise LAN/WAN design with firewall policies and 24/7 monitoring.</p>
               <div class="portfolio-tech">
-                <span>Cisco</span><span>VPN</span><span>Monitoring</span>
+                <span>Cisco</span>
+                <span>VPN</span>
+                <span>Monitoring</span>
               </div>
             </div>
           </article>
 
           <article class="portfolio-card" data-category="web">
-            <div class="portfolio-visual">
-              <div class="browser-mockup mockup-edu">
-                <div class="browser-bar"><span></span><span></span><span></span></div>
-                <div class="browser-screen">
-                  <div class="mock-course-cards"><span></span><span></span></div>
-                  <div class="mock-progress"></div>
-                </div>
-              </div>
+            <div class="portfolio-image-wrap">
+              <img class="portfolio-image" src="https://images.unsplash.com/photo-1501504905252-024087803386?w=600&h=400&fit=crop&q=80" alt="EduLearn LMS platform" width="600" height="400" loading="lazy">
               <div class="portfolio-overlay">
-                <p>Learning management system with courses, quizzes, and progress tracking.</p>
+                <span class="portfolio-view-btn">View Project</span>
               </div>
             </div>
             <div class="portfolio-body">
@@ -424,8 +385,11 @@
               </div>
               <h3>EduLearn LMS Platform</h3>
               <p class="portfolio-client">Education</p>
+              <p class="portfolio-desc">Learning platform with courses, quizzes, and student progress tracking.</p>
               <div class="portfolio-tech">
-                <span>Next.js</span><span>Node.js</span><span>MongoDB</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
               </div>
             </div>
           </article>
@@ -515,7 +479,7 @@
               <div class="contact-icon">📍</div>
               <div>
                 <h4>Address</h4>
-                <p>123 Tech Avenue, Business District<br>Your City, Country</p>
+                <p>Office 11, 2nd Floor, The Ark Plaza,<br>I-8 Islamabad, Islamabad, Pakistan, 46000</p>
               </div>
             </div>
             <div class="contact-item">
@@ -529,7 +493,7 @@
               <div class="contact-icon">✉️</div>
               <div>
                 <h4>Email</h4>
-                <p>info@gatewaytechnologies.com</p>
+                <p><a href="mailto:jabiralsabah@hotmail.com">jabiralsabah@hotmail.com</a></p>
               </div>
             </div>
             <div class="contact-item">
@@ -567,6 +531,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
