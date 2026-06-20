@@ -1,0 +1,14 @@
+# Add this block to your server's Caddyfile (e.g. /etc/caddy/Caddyfile)
+# Keep your existing site blocks — Caddy serves multiple domains on ports 80/443.
+
+gate-way-tech.site, www.gate-way-tech.site {
+	root * /var/www/gate-way-tech.site
+	file_server
+	encode gzip zstd
+
+	header {
+		X-Content-Type-Options nosniff
+		X-Frame-Options SAMEORIGIN
+		Referrer-Policy strict-origin-when-cross-origin
+	}
+}

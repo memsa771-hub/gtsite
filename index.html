@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gateway Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="#home" class="sidebar-logo">
+        <span class="logo-icon">G</span>
+        <span class="logo-text">Gateway<br><small>Technologies</small></span>
+      </a>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#home" class="nav-link"><span class="nav-num">01.</span> Home</a></li>
+        <li class="has-submenu">
+          <button class="nav-toggle" aria-expanded="false">
+            <span class="nav-num">02.</span> About Us
+            <svg class="arrow" viewBox="0 0 24 24" width="14" height="14"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="#about" class="nav-link">Our Story</a></li>
+            <li><a href="#about" class="nav-link">Our Team</a></li>
+            <li><a href="#about" class="nav-link">Why Choose Us</a></li>
+          </ul>
+        </li>
+        <li><a href="#portfolio" class="nav-link"><span class="nav-num">03.</span> Portfolio</a></li>
+        <li class="has-submenu">
+          <button class="nav-toggle" aria-expanded="false">
+            <span class="nav-num">04.</span> Services
+            <svg class="arrow" viewBox="0 0 24 24" width="14" height="14"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+          <ul class="submenu">
+            <li><a href="#services" class="nav-link">IT Services</a></li>
+            <li><a href="#services" class="nav-link">Digital Marketing</a></li>
+            <li><a href="#services" class="nav-link">Mobile Development</a></li>
+            <li><a href="#services" class="nav-link">Web Development</a></li>
+            <li><a href="#services" class="nav-link">Web Designing</a></li>
+            <li><a href="#services" class="nav-link">Network Infrastructure</a></li>
+            <li><a href="#services" class="nav-link">Virtualization</a></li>
+            <li><a href="#services" class="nav-link">Cloud Solutions</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">05.</span> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-social">
+      <a href="#" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h4v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="currentColor"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="currentColor"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <a href="#home" class="header-logo">
+      <span class="logo-icon">G</span>
+      <span class="logo-text">Gateway<br><small>Technologies</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="section hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Gateway Technologies</h1>
+        <p>Empowering businesses with innovative IT solutions and digital excellence.</p>
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+      </div>
+      <div class="hero-line"></div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="container">
+        <h2 class="section-title">WELCOME TO GATEWAY</h2>
+        <p class="section-subtitle">Your trusted partner for technology-driven growth and digital transformation.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast & Reliable</h3>
+            <p>High-performance solutions built for speed and stability.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure</h3>
+            <p>Enterprise-grade security for your data and infrastructure.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Global Reach</h3>
+            <p>Scalable solutions that grow with your business worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section hero-section hero-small">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>About Us</h1>
+      </div>
+      <div class="hero-line"></div>
+    </section>
+
+    <section class="section content-section">
+      <div class="container">
+        <h2 class="section-title">WHO WE ARE</h2>
+        <p class="section-subtitle">Innovate. Elevate. Captivate: Building Excellence Together.</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Gateway Technologies is a leading IT solutions company dedicated to helping businesses navigate the digital landscape. With years of experience and a passionate team, we deliver cutting-edge technology services tailored to your unique needs.</p>
+            <p>From web development to cloud infrastructure, we provide end-to-end solutions that drive growth, efficiency, and innovation for organizations of all sizes.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">150+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">80+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">25+</span>
+              <span class="stat-label">Team Members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section hero-section hero-small">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="hero-line"></div>
+    </section>
+
+    <section class="section content-section">
+      <div class="container">
+        <h2 class="section-title">OUR PORTFOLIO</h2>
+        <p class="section-subtitle">Innovate. Elevate. Captivate: Unveiling Excellence.</p>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-1"></div>
+            <div class="portfolio-info">
+              <h3>E-Commerce Platform</h3>
+              <p>Web Development</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-2"></div>
+            <div class="portfolio-info">
+              <h3>Corporate Website</h3>
+              <p>Web Designing</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-3"></div>
+            <div class="portfolio-info">
+              <h3>Mobile Banking App</h3>
+              <p>Mobile Development</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-4"></div>
+            <div class="portfolio-info">
+              <h3>Cloud Migration</h3>
+              <p>Cloud Solutions</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-5"></div>
+            <div class="portfolio-info">
+              <h3>Brand Campaign</h3>
+              <p>Digital Marketing</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img portfolio-img-6"></div>
+            <div class="portfolio-info">
+              <h3>Network Setup</h3>
+              <p>Network Infrastructure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section hero-section hero-small">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Services</h1>
+      </div>
+      <div class="hero-line"></div>
+    </section>
+
+    <section class="section content-section">
+      <div class="container">
+        <h2 class="section-title">OUR SERVICES</h2>
+        <p class="section-subtitle">Comprehensive technology solutions for every business need.</p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-num">01</div>
+            <h3>IT Services</h3>
+            <p>Managed IT support, consulting, and infrastructure management for seamless operations.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">02</div>
+            <h3>Digital Marketing</h3>
+            <p>SEO, social media, and online campaigns to boost your brand visibility.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">03</div>
+            <h3>Mobile Development</h3>
+            <p>Native and cross-platform mobile apps for iOS and Android devices.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">04</div>
+            <h3>Web Development</h3>
+            <p>Custom websites and web applications built with modern technologies.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">05</div>
+            <h3>Web Designing</h3>
+            <p>Beautiful, user-friendly designs that reflect your brand identity.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">06</div>
+            <h3>Network Infrastructure</h3>
+            <p>Robust networking solutions for secure and reliable connectivity.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">07</div>
+            <h3>Virtualization</h3>
+            <p>Optimize resources with server and desktop virtualization solutions.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-num">08</div>
+            <h3>Cloud Solutions</h3>
+            <p>Cloud migration, hosting, and management on AWS, Azure, and GCP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section hero-section hero-small">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Contact</h1>
+      </div>
+      <div class="hero-line"></div>
+    </section>
+
+    <section class="section content-section">
+      <div class="container">
+        <h2 class="section-title">CONTACT US</h2>
+        <p class="section-subtitle">Get in touch — we'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>123 Tech Avenue, Business District<br>Your City, Country</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p>info@gatewaytechnologies.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Gateway Technologies. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
