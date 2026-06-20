@@ -132,9 +132,7 @@
         'Reduces front-desk workload with automated reservation handling.',
         'Improves guest experience before arrival with clear packages and pricing.'
       ],
-      tech: ['React', 'Node.js', 'PostgreSQL'],
-      link: 'https://www.facebook.com/p/Nestopia-Hotels-and-Resorts-61576733877646/',
-      linkLabel: 'Visit Nestopia on Facebook'
+      tech: ['React', 'Node.js', 'PostgreSQL']
     },
     'edulearn': {
       title: 'EduLearn LMS Platform',
@@ -179,9 +177,6 @@
     document.getElementById('modalProjectClient').textContent = project.client;
     document.getElementById('modalProjectSummary').textContent = project.summary;
 
-    const ribbon = document.getElementById('modalProjectRibbon');
-    if (ribbon) ribbon.hidden = !project.featured;
-
     const benefitsList = document.getElementById('modalProjectBenefits');
     benefitsList.innerHTML = '';
     project.benefits.forEach(function (benefit) {
@@ -190,22 +185,7 @@
       benefitsList.appendChild(li);
     });
 
-    const techWrap = document.getElementById('modalProjectTech');
-    techWrap.innerHTML = '';
-    project.tech.forEach(function (tech) {
-      const span = document.createElement('span');
-      span.textContent = tech;
-      techWrap.appendChild(span);
-    });
-
-    const linkBtn = document.getElementById('modalProjectLink');
-    if (project.link) {
-      linkBtn.href = project.link;
-      linkBtn.textContent = project.linkLabel || 'Visit Project';
-      linkBtn.hidden = false;
-    } else {
-      linkBtn.hidden = true;
-    }
+    document.getElementById('modalProjectTech').textContent = project.tech.join(' · ');
 
     projectModalOverlay.classList.add('active');
     projectModalOverlay.setAttribute('aria-hidden', 'false');
@@ -316,26 +296,4 @@
       });
     });
   }
-
-  var sections = document.querySelectorAll('section[id]');
-  var observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  sections.forEach(function (section) {
-    if (!section.classList.contains('hero-section')) {
-      section.style.opacity = '0';
-      section.style.transform = 'translateY(20px)';
-      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(section);
-    }
-  });
 })();
