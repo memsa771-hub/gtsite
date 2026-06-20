@@ -58,6 +58,33 @@
     });
   }
 
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var portfolioCards = document.querySelectorAll('.portfolio-card');
+  var portfolioEmpty = document.getElementById('portfolioEmpty');
+
+  if (filterBtns.length && portfolioCards.length) {
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+        var visibleCount = 0;
+
+        filterBtns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+
+        portfolioCards.forEach(function (card) {
+          var category = card.getAttribute('data-category');
+          var show = filter === 'all' || category === filter;
+          card.classList.toggle('hidden', !show);
+          if (show) visibleCount++;
+        });
+
+        if (portfolioEmpty) {
+          portfolioEmpty.hidden = visibleCount > 0;
+        }
+      });
+    });
+  }
+
   var sections = document.querySelectorAll('section[id]');
   var observer = new IntersectionObserver(
     function (entries) {

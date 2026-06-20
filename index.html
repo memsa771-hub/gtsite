@@ -93,9 +93,13 @@
     <section id="home" class="section hero-section">
       <div class="hero-bg"></div>
       <div class="hero-content">
+        <span class="hero-badge">IT Solutions &amp; Digital Innovation</span>
         <h1>Gateway Technologies</h1>
-        <p>Empowering businesses with innovative IT solutions and digital excellence.</p>
-        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <p>We design, build, and scale technology that helps businesses grow — from web platforms to cloud infrastructure.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">Our Services</a>
+          <a href="#portfolio" class="btn-outline">View Portfolio</a>
+        </div>
       </div>
       <div class="hero-line"></div>
     </section>
@@ -106,19 +110,25 @@
         <p class="section-subtitle">Your trusted partner for technology-driven growth and digital transformation.</p>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">⚡</div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
             <h3>Fast & Reliable</h3>
-            <p>High-performance solutions built for speed and stability.</p>
+            <p>High-performance solutions built for speed, uptime, and stability.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Secure</h3>
-            <p>Enterprise-grade security for your data and infrastructure.</p>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Secure by Design</h3>
+            <p>Enterprise-grade security practices across every layer of your stack.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🌐</div>
-            <h3>Global Reach</h3>
-            <p>Scalable solutions that grow with your business worldwide.</p>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <h3>Scalable Growth</h3>
+            <p>Architecture that scales with your business — locally and globally.</p>
           </div>
         </div>
       </div>
@@ -174,55 +184,255 @@
       <div class="hero-line"></div>
     </section>
 
-    <section class="section content-section">
+    <section class="section content-section portfolio-section">
       <div class="container">
-        <h2 class="section-title">OUR PORTFOLIO</h2>
-        <p class="section-subtitle">Innovate. Elevate. Captivate: Unveiling Excellence.</p>
-
-        <div class="portfolio-grid">
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-1"></div>
-            <div class="portfolio-info">
-              <h3>E-Commerce Platform</h3>
-              <p>Web Development</p>
-            </div>
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">OUR PORTFOLIO</h2>
+            <p class="section-subtitle">Selected work across web, mobile, cloud, and digital — built for real business outcomes.</p>
           </div>
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-2"></div>
-            <div class="portfolio-info">
-              <h3>Corporate Website</h3>
-              <p>Web Designing</p>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-3"></div>
-            <div class="portfolio-info">
-              <h3>Mobile Banking App</h3>
-              <p>Mobile Development</p>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-4"></div>
-            <div class="portfolio-info">
-              <h3>Cloud Migration</h3>
-              <p>Cloud Solutions</p>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-5"></div>
-            <div class="portfolio-info">
-              <h3>Brand Campaign</h3>
-              <p>Digital Marketing</p>
-            </div>
-          </div>
-          <div class="portfolio-card">
-            <div class="portfolio-img portfolio-img-6"></div>
-            <div class="portfolio-info">
-              <h3>Network Setup</h3>
-              <p>Network Infrastructure</p>
-            </div>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat"><strong>150+</strong><span>Delivered Projects</span></div>
+            <div class="portfolio-stat"><strong>12</strong><span>Industries Served</span></div>
           </div>
         </div>
+
+        <div class="portfolio-filters" id="portfolioFilters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="cloud">Cloud &amp; IT</button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <article class="portfolio-card featured" data-category="web">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-ecommerce">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-nav"></div>
+                  <div class="mock-hero-block"></div>
+                  <div class="mock-cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Full-stack marketplace with real-time inventory, payments, and admin dashboard.</p>
+                <span class="overlay-link">Featured Project</span>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-year">2025</span>
+              </div>
+              <h3>Apex Commerce Platform</h3>
+              <p class="portfolio-client">Retail &amp; E-Commerce</p>
+              <div class="portfolio-tech">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="mobile">
+            <div class="portfolio-visual">
+              <div class="phone-mockup mockup-banking">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="mock-app-header"></div>
+                  <div class="mock-balance"></div>
+                  <div class="mock-actions"><span></span><span></span><span></span><span></span></div>
+                  <div class="mock-list"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Secure mobile banking with biometric login, transfers, and spending insights.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Mobile Development</span>
+                <span class="portfolio-year">2025</span>
+              </div>
+              <h3>FinVault Mobile Banking</h3>
+              <p class="portfolio-client">Financial Services</p>
+              <div class="portfolio-tech">
+                <span>Flutter</span><span>Firebase</span><span>REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="web">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-healthcare">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-sidebar"></div>
+                  <div class="mock-main">
+                    <div class="mock-chart"></div>
+                    <div class="mock-table"><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Patient records, appointment scheduling, and analytics for healthcare providers.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-year">2024</span>
+              </div>
+              <h3>MedCore Health Portal</h3>
+              <p class="portfolio-client">Healthcare</p>
+              <div class="portfolio-tech">
+                <span>Vue.js</span><span>Django</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="cloud">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-cloud">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-cloud-nodes">
+                    <div class="node"></div><div class="node center"></div><div class="node"></div>
+                  </div>
+                  <div class="mock-metrics"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Zero-downtime AWS migration with auto-scaling and cost optimization.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Cloud Solutions</span>
+                <span class="portfolio-year">2024</span>
+              </div>
+              <h3>CloudShift Enterprise</h3>
+              <p class="portfolio-client">Logistics &amp; Supply Chain</p>
+              <div class="portfolio-tech">
+                <span>AWS</span><span>Docker</span><span>Terraform</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="web">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-pos">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-pos-grid">
+                    <div class="mock-pos-item"></div><div class="mock-pos-item"></div>
+                    <div class="mock-pos-item"></div><div class="mock-pos-item"></div>
+                  </div>
+                  <div class="mock-pos-cart"></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Point-of-sale system with inventory sync, receipts, and sales reporting.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-year">2025</span>
+              </div>
+              <h3>Retail POS Pro</h3>
+              <p class="portfolio-client">Retail &amp; Hospitality</p>
+              <div class="portfolio-tech">
+                <span>Python</span><span>Gunicorn</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="marketing">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-marketing">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-campaign-header"></div>
+                  <div class="mock-stats-row"><span></span><span></span><span></span></div>
+                  <div class="mock-graph"></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Multi-channel campaign with SEO, paid ads, and conversion tracking.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Digital Marketing</span>
+                <span class="portfolio-year">2024</span>
+              </div>
+              <h3>BrandPulse Growth Campaign</h3>
+              <p class="portfolio-client">Consumer Brands</p>
+              <div class="portfolio-tech">
+                <span>SEO</span><span>Google Ads</span><span>Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="cloud">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-network">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-network">
+                    <div class="net-line"></div><div class="net-line"></div>
+                    <div class="net-dot a"></div><div class="net-dot b"></div><div class="net-dot c"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Enterprise LAN/WAN design with firewall policies and 24/7 monitoring.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Network Infrastructure</span>
+                <span class="portfolio-year">2024</span>
+              </div>
+              <h3>NetGuard Corporate Network</h3>
+              <p class="portfolio-client">Corporate Offices</p>
+              <div class="portfolio-tech">
+                <span>Cisco</span><span>VPN</span><span>Monitoring</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="web">
+            <div class="portfolio-visual">
+              <div class="browser-mockup mockup-edu">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-screen">
+                  <div class="mock-course-cards"><span></span><span></span></div>
+                  <div class="mock-progress"></div>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <p>Learning management system with courses, quizzes, and progress tracking.</p>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Web Development</span>
+                <span class="portfolio-year">2023</span>
+              </div>
+              <h3>EduLearn LMS Platform</h3>
+              <p class="portfolio-client">Education</p>
+              <div class="portfolio-tech">
+                <span>Next.js</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="portfolio-empty" id="portfolioEmpty" hidden>No projects in this category yet.</p>
       </div>
     </section>
 
