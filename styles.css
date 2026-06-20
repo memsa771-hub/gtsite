@@ -704,6 +704,8 @@ img {
   background: var(--teal);
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(30, 184, 196, 0.4);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .portfolio-ribbon {
