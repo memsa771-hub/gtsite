@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -85,57 +85,103 @@
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content reveal">
-      <h1 class="hero-headline">Technology that moves your business forward.</h1>
-      <p class="hero-desc">We design and build websites, apps, and IT systems for companies across Pakistan — reliable, scalable, and ready for real-world use.</p>
-      <div class="hero-actions">
-        <a href="#portfolio" class="btn-primary">View our work</a>
-        <a href="#contact" class="btn-ghost">Talk to us <span aria-hidden="true">→</span></a>
+    <div class="hero-bg">
+      <div class="hero-mesh"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="hero-eyebrow">Gateway Technologies</p>
+        <h1 class="hero-headline">Engineering digital growth for modern businesses.</h1>
+        <p class="hero-desc">Websites, mobile apps, and IT infrastructure for companies in Pakistan — built to be fast, secure, and ready for everyday operations.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn-hero-primary">View our work
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn-hero-secondary">Talk to us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>150+</strong><span>Projects</span></div>
+          <div class="hero-stat"><strong>80+</strong><span>Clients</span></div>
+          <div class="hero-stat"><strong>10+</strong><span>Years</span></div>
+          <div class="hero-stat"><strong>12</strong><span>Industries</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="hero-showcase">
+          <div class="showcase-card showcase-main">
+            <img src="assets/images/nestopia-skardu.png" alt="" width="560" height="360" loading="eager"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?w=560&h=360&fit=crop&q=80';">
+            <div class="showcase-meta">
+              <span class="showcase-tag">Featured</span>
+              <span class="showcase-name">Nestopia Hotel Booking</span>
+            </div>
+          </div>
+          <div class="showcase-card showcase-float showcase-float-1">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=280&h=180&fit=crop&q=80" alt="" width="280" height="180" loading="eager">
+            <span>E-Commerce</span>
+          </div>
+          <div class="showcase-card showcase-float showcase-float-2">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=280&h=180&fit=crop&q=80" alt="" width="280" height="180" loading="eager">
+            <span>Mobile Apps</span>
+          </div>
+          <div class="showcase-orbit"></div>
+        </div>
       </div>
     </div>
-    <div class="hero-metrics container">
-      <div class="metric"><strong>150+</strong><span>Projects</span></div>
-      <div class="metric"><strong>80+</strong><span>Clients</span></div>
-      <div class="metric"><strong>10+</strong><span>Years</span></div>
-      <div class="metric"><strong>12</strong><span>Industries</span></div>
+
+    <div class="hero-strip">
+      <div class="container hero-strip-inner">
+        <span>Web Development</span>
+        <span class="hero-strip-dot"></span>
+        <span>Mobile Apps</span>
+        <span class="hero-strip-dot"></span>
+        <span>Cloud &amp; IT</span>
+        <span class="hero-strip-dot"></span>
+        <span>Digital Marketing</span>
+        <span class="hero-strip-dot"></span>
+        <span>Network Infrastructure</span>
+      </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="section section-white">
-    <div class="container">
-      <div class="section-intro reveal">
-        <h2 class="section-heading">Built for businesses that need results.</h2>
-        <p class="section-lead">No fluff — just dependable software, clean design, and infrastructure you can count on every day.</p>
+  <!-- Home capabilities -->
+  <section class="home-capabilities">
+    <div class="container capabilities-grid">
+      <div class="capability reveal">
+        <div class="capability-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <h3>Built for speed</h3>
+          <p>Systems that load fast and stay online when it matters.</p>
+        </div>
       </div>
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3>Performance</h3>
-          <p>Fast, stable systems that stay online when your team needs them most.</p>
+      <div class="capability reveal">
+        <div class="capability-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Security</h3>
-          <p>Data protection and access control woven into every layer we build.</p>
+        <div>
+          <h3>Secure by design</h3>
+          <p>Protection and access control at every layer.</p>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
-          </div>
-          <h3>Scale</h3>
-          <p>Solutions that grow with your customers, team, and ambitions.</p>
+      </div>
+      <div class="capability reveal">
+        <div class="capability-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+        </div>
+        <div>
+          <h3>Ready to scale</h3>
+          <p>Solutions that grow with your team and customers.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About preview -->
   <section id="about" class="section section-gray">
     <div class="container about-layout">
       <div class="about-copy reveal">
@@ -512,6 +558,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=10"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>
