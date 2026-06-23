@@ -6,12 +6,33 @@
   const navLinks = document.querySelectorAll('.nav-link');
   const submenuToggles = document.querySelectorAll('.nav-toggle');
   const contactForm = document.getElementById('contactForm');
-  const topHeader = document.querySelector('.top-header');
+  const topHeader = document.getElementById('topHeader');
+  const heroSection = document.querySelector('.hero');
+
+  function updateHeader() {
+    if (!topHeader || !heroSection) return;
+    var heroBottom = heroSection.offsetHeight - 80;
+    topHeader.classList.toggle('is-light', window.scrollY > heroBottom);
+  }
 
   if (topHeader) {
-    window.addEventListener('scroll', function () {
-      topHeader.classList.toggle('is-scrolled', window.scrollY > 40);
-    }, { passive: true });
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+  }
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
   const projectModalOverlay = document.getElementById('projectModalOverlay');
