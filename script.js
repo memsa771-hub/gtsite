@@ -6,6 +6,13 @@
   const navLinks = document.querySelectorAll('.nav-link');
   const submenuToggles = document.querySelectorAll('.nav-toggle');
   const contactForm = document.getElementById('contactForm');
+  const topHeader = document.querySelector('.top-header');
+
+  if (topHeader) {
+    window.addEventListener('scroll', function () {
+      topHeader.classList.toggle('is-scrolled', window.scrollY > 40);
+    }, { passive: true });
+  }
 
   const projectModalOverlay = document.getElementById('projectModalOverlay');
   const projectModal = document.getElementById('projectModal');

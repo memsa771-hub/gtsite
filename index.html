@@ -10,8 +10,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -84,17 +84,53 @@
   <main>
 
     <!-- HOME -->
-    <section id="home" class="section hero-section">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">Gateway Technologies</h1>
-        <p class="hero-lead">Web development, mobile apps, cloud setup, and IT support for businesses in Pakistan and beyond.</p>
-        <div class="hero-actions">
-          <a href="#services" class="btn-primary">See what we do</a>
-          <a href="#portfolio" class="btn-outline">Our work</a>
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-brand">Gateway Technologies</p>
+          <h1 class="hero-headline">Engineering digital growth for modern businesses</h1>
+          <p class="hero-desc">We build websites, mobile apps, and IT infrastructure for companies in Pakistan — helping teams move faster, work smarter, and serve customers better.</p>
+          <a href="#about" class="btn-hero">Read more
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="hero-art" viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hg1" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0d9488" stop-opacity="0.15"/>
+                <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#6366f1" stop-opacity="0.85"/>
+              </linearGradient>
+              <linearGradient id="hg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="12" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M60 360 L60 140 L340 40 L340 160 L200 360 Z" fill="url(#hg1)" opacity="0.9"/>
+            <path d="M60 360 L60 140 L340 40 L340 160 L200 360 Z" fill="url(#hg2)" opacity="0.35"/>
+            <circle cx="340" cy="52" r="28" fill="#14b8a6" opacity="0.6" filter="url(#glow)"/>
+            <circle cx="340" cy="52" r="8" fill="#fff" opacity="0.9"/>
+          </svg>
         </div>
       </div>
-      <div class="hero-line"></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>150+</strong><span>Projects delivered</span></div>
+        <div class="trust-item"><strong>80+</strong><span>Happy clients</span></div>
+        <div class="trust-item"><strong>10+</strong><span>Years in IT</span></div>
+        <div class="trust-item"><strong>12</strong><span>Industries served</span></div>
+      </div>
     </section>
 
     <section class="section intro-section">
@@ -570,6 +606,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
